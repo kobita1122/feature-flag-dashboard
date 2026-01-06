@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feature Flag Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Feature Flag Dashboard</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>New UI</td>
+      <td id="uiStatus">OFF</td>
+      <td><button onclick="toggle('ui')">Toggle</button></td>
+    </tr>
+    <tr>
+      <td>Payments</td>
+      <td id="payStatus">OFF</td>
+      <td><button onclick="toggle('pay')">Toggle</button></td>
+    </tr>
+    <tr>
+      <td>Analytics</td>
+      <td id="anaStatus">OFF</td>
+      <td><button onclick="toggle('ana')">Toggle</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
